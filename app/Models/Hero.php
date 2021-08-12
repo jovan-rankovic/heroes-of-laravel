@@ -4,26 +4,7 @@ namespace App\Models;
 
 abstract class Hero
 {
-    private int $type;
-    private int $health;
-
-    /**
-     * @param int $type
-     * @param int $health
-     */
-    public function __construct(int $type, int $health)
-    {
-        $this->type = $type;
-        $this->health = $health;
-    }
-
-    /**
-     * @return int
-     */
-    public function getType(): int
-    {
-        return $this->type;
-    }
+    protected int $health;
 
     /**
      * @return int
@@ -34,10 +15,10 @@ abstract class Hero
     }
 
     /**
-     * @param int $health
+     * @param int amount
      */
-    public function setHealth(int $health): void
+    public function removeHealth(int $amount): void
     {
-        $this->health = $health;
+        $this->health -= $amount;
     }
 }
