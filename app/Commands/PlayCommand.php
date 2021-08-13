@@ -4,21 +4,21 @@ namespace App\Commands;
 
 use LaravelZero\Framework\Commands\Command;
 
-class RunCommand extends Command
+class PlayCommand extends Command
 {
     /**
      * The signature of the command.
      *
      * @var string
      */
-    protected $signature = 'run {name=Artisan}';
+    protected $signature = 'play {name=Artisan}';
 
     /**
      * The description of the command.
      *
      * @var string
      */
-    protected $description = '>>> Run the game <<<';
+    protected $description = '>>> Play the game <<<';
 
     /**
      * Execute the console command.
