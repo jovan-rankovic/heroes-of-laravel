@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Wizard extends Hero
+class Wizard
 {
     public function __construct()
     {

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-abstract class Hero
+abstract class Character
 {
     protected int $health;
 
@@ -17,8 +17,5 @@ abstract class Hero
     /**
      * @param int amount
      */
-    public function removeHealth(int $amount): void
-    {
-        $this->health -= $amount;
-    }
+    abstract public function normalAttack(int $amount): void;
 }

@@ -2,7 +2,7 @@
 
 namespace App\Models;
 
-class Knight extends Hero
+class Knight
 {
     public function __construct()
     {
