@@ -2,11 +2,11 @@
 
 namespace App\Models;
 
-class Wizard extends Character
+class Dragon extends Character
 {
     public function __construct()
     {
-        $this->health = 150;
+        $this->health = 100;
     }
 
     public function normalAttack(int $amount): void
