@@ -15,7 +15,7 @@ abstract class Character
     }
 
     /**
-     * @param int amount
+     * @param Character $character
      */
-    abstract public function normalAttack(int $amount): void;
+    abstract public function normalAttack(Character $character): void;
 }

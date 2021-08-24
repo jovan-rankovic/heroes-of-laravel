@@ -9,7 +9,7 @@ class Spider extends Character
         $this->health = 100;
     }
 
-    public function normalAttack(int $amount): void
+    public function normalAttack(Character $character): void
     {
         // TODO: Implement normalAttack() method.
     }
